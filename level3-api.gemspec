@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "level3-api"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
   s.license = 'MIT'
   s.email = "david-vv@nicklay.com"
   s.homepage = "https://github.com/venturaville/level3-gem"

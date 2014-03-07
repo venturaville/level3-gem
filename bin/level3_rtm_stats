@@ -3,7 +3,7 @@
 require 'level3-api'
 require 'json'
 
-l3 = Level3.new(ENV['LEVEL3APIKEY'],ENV['LEVEL3APISECRET'])
+l3 = Level3Api.new(ENV['LEVEL3APIKEY'],ENV['LEVEL3APISECRET'])
 accessgroups = l3.request('/accessGroups',"/v1.0") # --TODO assuming only 1 for now
 stats = l3.request('/rtm/cdn',"/v1.0/#{accessgroups['id']}","GET",{'serviceType'=>'c','property'=>'true'})
 puts JSON.pretty_generate stats
