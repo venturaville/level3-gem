@@ -54,7 +54,7 @@ class Level3Api
     set_date
     authstr = generate_auth_string(service,resource,method)
     url = "#{@api_url_base}#{service}#{resource}"
-    puts "request: url=#{url}"
+    #puts "request: url=#{url}"
     xml = RestClient.get url,
       :content_type => @content_type,
       :authorization => authstr,
